@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$color-primary: #ff5c00;
+$color-dark: #2e2e2e;
+$color-hover: #7b4c2e; 
+$color-bg: #fdfdfd;
+
+$font-main: 'Inter', sans-serif;
+$radius: 12px;
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+  overflow-x: hidden;
+}
+body {
+    font-family: $font-main;
+    color: $color-dark;
+    background-color: $color-bg;
+    line-height: 1.6;
+    font-weight: 400;
+    min-height: 100vh;
+ 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-main;
+    color: $color-primary;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  ul,ol {
+    list-style-type: none;
+  }
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  
+    &:hover {
+      color: $color-hover;
+      text-decoration: underline;
+    }
+  }
+  
+  a:hover {
+    color: $color-hover;
+  }
+  p {
+    font-family: $font-main;
+    color: $color-dark;
+    font-size: 1rem;
+    margin: 0 0 1em;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: $radius;
+    font-family: $font-main;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: $color-primary;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: $color-hover;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
